@@ -25,20 +25,22 @@ Built while shipping real projects, not as a side quest.
 
 #### The tools
 
-Everything, in one command:
+One plugin, one install, everything in it:
 
 ```
-/plugin marketplace add quietmachineworks/marketplace
+/plugin marketplace add quietmachineworks/qmw
+/plugin install qmw@quietmachineworks
 ```
 
-- **[ratchet](https://github.com/quietmachineworks/ratchet)** - report which of
-  a project's stated code rules are enforced, and build the checks that enforce
-  the rest.
-- **[shakedown](https://github.com/quietmachineworks/shakedown)** - play a real
-  user through a product's UI, screen by screen, on a genuinely empty
-  environment, until every screen in scope survives contact with reality.
+- **`/qmw:ratchet-audit`** - report which of a project's stated code rules are
+  enforced, and which could be. Writes nothing.
+- **`/qmw:ratchet-add`** - build the check that enforces one, frozen at today's
+  count so a repository that already breaks the rule can adopt it today.
+- **`/qmw:shakedown`** - play a real user through a product's UI, screen by
+  screen, on a genuinely empty environment, until every screen in scope survives
+  contact with reality.
 
-Each one also installs on its own, from its own repository.
+It all lives in **[quietmachineworks/qmw](https://github.com/quietmachineworks/qmw)**.
 
 ---
 
@@ -68,18 +70,21 @@ Tout ici a la même forme :
 
 #### Les outils
 
-Tout, en une commande :
+Un plugin, une installation, tout dedans :
 
 ```
-/plugin marketplace add quietmachineworks/marketplace
+/plugin marketplace add quietmachineworks/qmw
+/plugin install qmw@quietmachineworks
 ```
 
-- **[ratchet](https://github.com/quietmachineworks/ratchet)** - dit lesquelles
-  des règles de code qu'un projet s'est données sont réellement appliquées, et
-  construit les contrôles qui appliquent les autres.
-- **[shakedown](https://github.com/quietmachineworks/shakedown)** - joue un
-  vrai utilisateur dans l'interface d'un produit, écran par écran, sur un
-  environnement réellement vide, jusqu'à ce que chaque écran du périmètre
-  survive au contact du réel.
+- **`/qmw:ratchet-audit`** - dit lesquelles des règles de code qu'un projet
+  s'est données sont réellement appliquées, et lesquelles pourraient l'être.
+  N'écrit rien.
+- **`/qmw:ratchet-add`** - construit le contrôle qui applique l'une d'elles, gelé
+  au compte du jour, pour qu'un dépôt qui enfreint déjà la règle puisse l'adopter
+  aujourd'hui.
+- **`/qmw:shakedown`** - joue un vrai utilisateur dans l'interface d'un produit,
+  écran par écran, sur un environnement réellement vide, jusqu'à ce que chaque
+  écran du périmètre survive au contact du réel.
 
-Chacun s'installe aussi seul, depuis son propre dépôt.
+Le tout vit dans **[quietmachineworks/qmw](https://github.com/quietmachineworks/qmw)**.
