@@ -36,9 +36,15 @@ One plugin, one install, everything in it:
   enforced, and which could be. Writes nothing.
 - **`/qmw:ratchet-add`** - build the check that enforces one, frozen at today's
   count so a repository that already breaks the rule can adopt it today.
+- **`/qmw:survey`** - audit the whole codebase, or one perimeter of it, the way
+  a vessel gets surveyed before purchase: a prioritized defect list, judged
+  against the stack the project actually runs. Fixes nothing, writes nothing.
 - **`/qmw:shakedown`** - play a real user through a product's UI, screen by
   screen, on a genuinely empty environment, until every screen in scope survives
   contact with reality.
+- **`/qmw:squawk`** - run one reported bug from incident to proven fix:
+  reproduced in a real browser before any code changes, fixed at the class
+  rather than the symptom, then proven the way it was found.
 
 It all lives in **[quietmachineworks/qmw](https://github.com/quietmachineworks/qmw)**.
 
@@ -83,8 +89,15 @@ Un plugin, une installation, tout dedans :
 - **`/qmw:ratchet-add`** - construit le contrôle qui applique l'une d'elles, gelé
   au compte du jour, pour qu'un dépôt qui enfreint déjà la règle puisse l'adopter
   aujourd'hui.
+- **`/qmw:survey`** - audite la totalité du code, ou un seul périmètre, comme on
+  expertise un navire avant l'achat : une liste de défauts priorisée, jugée
+  contre la stack que le projet fait réellement tourner. Ne corrige rien,
+  n'écrit rien.
 - **`/qmw:shakedown`** - joue un vrai utilisateur dans l'interface d'un produit,
   écran par écran, sur un environnement réellement vide, jusqu'à ce que chaque
   écran du périmètre survive au contact du réel.
+- **`/qmw:squawk`** - mène un bug signalé de l'incident au fix prouvé :
+  reproduit dans un vrai navigateur avant de toucher au code, corrigé à la
+  classe plutôt qu'au symptôme, puis prouvé comme il a été trouvé.
 
 Le tout vit dans **[quietmachineworks/qmw](https://github.com/quietmachineworks/qmw)**.
